@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시간표</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+        th, td {
+            border: 2px solid black; /* 두꺼운 선으로 요일 및 시간 구분 */
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2; /* 요일과 시간 구분을 위한 배경색 */
+            font-weight: bold;
+        }
+        td {
+            background-color: #e6f7ff; /* 수업 칸 배경색 */
+        }
+        .free-time {
+            background-color: #ffffff; /*수업이 없는 자유시간의 배경색은 하얀색. 수업이 없는 칸을 클래스로 free-time 이라고 묶고, 그걸 하얀색으로 하였음.*/
+        }
+    </style>
+</head>
+<body>
+    <img src = "https://i.pinimg.com/474x/14/a8/cb/14a8cb7581f9bdad71212a183619cf33.jpg" style: 150px; height: 200px;>
+    <br>
+    <h1>시간표</h1>
+    <table>
+        <tr>
+            <th style="border-right: 4px solid black;">시간</th> <!-- 시간 구분을 더 두껍게 -->
+            <th>월</th>
+            <th>화</th>
+            <th>수</th>
+            <th>목</th>
+            <th>금</th>
+        </tr>
+        <tr>
+            <td style="border-right: 4px solid black;">9:00 - 10:00</td> <!-- 시간 구분 -->
+            <td rowspan="3">웹 프로그래밍</td>
+            <td rowspan="3">서버 프로그래밍</td>
+            <td rowspan="9" class="free-time"></td>
+            <td rowspan="3">리눅스 보안 실습</td>
+            <td rowspan="9" class="free-time"></td>
+        </tr>
+        <tr>
+            <td style="border-right: 4px solid black;">10:00 - 11:00</td>
+        </tr>
+        <tr>
+            <td style="border-right: 4px solid black;">11:00 - 12:00</td>
+        </tr>
+        <tr>
+            <td style="border-right: 4px solid black;">12:00 - 13:00</td>
+            <td rowspan="3">정보보안론</td>
+            <td rowspan="3" class="free-time"></td>
+            <td rowspan="3">기초수학</td>
+        </tr>
+        <tr>
+            <td style="border-right: 4px solid black;">13:00 - 14:00</td>
+        </tr>
+        <tr>
+            <td style="border-right: 4px solid black;">14:00 - 15:00</td>
+        </tr>
+        <tr>
+            <td style="border-right: 4px solid black;">15:00 - 16:00</td>
+            <td rowspan="3" class="free-time"></td>
+            <td rowspan="3">시스템 프로그래밍</td>
+            <td rowspan="3" class="free-time"></td>
+        </tr>
+        <tr>
+            <td style="border-right: 4px solid black;">16:00 - 17:00</td>
+        </tr>
+        <tr>
+            <td style="border-right: 4px solid black;">17:00 - 18:00</td>
+            
+        </tr>
+    </table>
+</body>
+</html>
