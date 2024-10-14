@@ -9,10 +9,10 @@
     <h3>마우스를 올려보세요</h3>
     <hr>
     <img src="https://loremflickr.com/320/400"
-    onmouseover="this.src='1.png'"
-    
+    onmouseover="this.src='3.png'"
     onmouseout="this.src='https://loremflickr.com/320/400'">
 <script>
+    /*
     document.write("<h3>반갑고</h3>");
     document.write("2+5=7<br>");
     document.write("<mark>ㅇㅋ?</mark>");
@@ -21,7 +21,13 @@
     let ret = confirm("ㅈㄹㄴ"); // 이거는 그냥 알람이 뜨게 하고, 확인과정을 거치는 것.(제출하기셌습니까? 같은거)
     document.write("<br>");
     document.write(ret); // 이거는 사용자가 확인을 누르면 true, 아니면 false 를 뜨게 하는것
-    
+    */
+
+    let num = prompt("숫자 입력", 100); //입력은 무조건 문자열로.
+    document.write("<hr>");
+    let r = parseInt(num) + 100; //"100" -> 100
+    document.write("<br>"+ r +"<hr>"); // 찍어보셈 ㅇㅇ
+
 </script>
 </body>
 </html>
